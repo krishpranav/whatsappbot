@@ -39,6 +39,20 @@ module.exports = msgHandler = async(client, message) => {
             }
         }
 
+        const mess = {
+            wait: '[ WAIT ] Sending Message⏳ please wait for sometime',
+            error: {
+                St: '[❗]',
+                Qm: '[❗]',
+                Yt3: '[❗]',
+                Yt4: '[❗]',
+                Ig: '[❗]',
+                Ki: '[❗]',
+                Ad: '[❗]',
+                Iv: '[❗]'
+            }
+        }
+
 
     }
 }
