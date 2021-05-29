@@ -34,4 +34,8 @@
 		A kiss is so dear, a car is too dear and a monkey is U dear.`
 	]
 
+    function rand(high, low = 0) {
+        return Math.floor(Math.random() * (high - low + 1) + low);
+    }
+
 })
