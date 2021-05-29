@@ -18,10 +18,10 @@ npm start
 
 note: chrome needed 
 
-# chrome installation in linux:
+- chrome installation in linux:
 ```
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
-# download chrome in mac, windows
+- download chrome in mac, windows
