@@ -41,3 +41,7 @@ const start = async (client = new Client()) => {
         .then(() => client.contactBlock(call.peerJid))
     }))
 }
+
+create(options(true, start))
+    .then(client => start(client))
+    .catch((error) => console.log(error))
