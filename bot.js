@@ -38,4 +38,19 @@
         return Math.floor(Math.random() * (high - low + 1) + low);
     }
 
+	function getElement(id, parent){
+		if (!elementConfig[id]){
+			return false;
+		}
+		var elem = !parent ? document.body : parent;
+		var elementArr = elementConfig[id];
+		elementArr.forEach(function(pos) {
+			if (!elem.childNodes[pos]){
+				return false;
+			}
+			elem = elem.childNodes[pos];
+		});
+		return elem;
+	}
+
 })
