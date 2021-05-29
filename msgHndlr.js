@@ -29,6 +29,16 @@ module.exports = msgHandler = async(client, message) => {
         const command = commands.toLowerCase().split(' ')[0] || ''
         const args = commands.split(' ')
 
+        const msgs = (message) => {
+            if (command.startsWith('!')) {
+                if (message.length >= 10) {
+                    return `${message.substr(0, 15)}`
+                } else {
+                    return `${message}`
+                }
+            }
+        }
+
 
     }
 }
